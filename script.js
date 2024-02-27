@@ -12,14 +12,16 @@
  let userStatus = document.querySelector("#user_status");
  let compStatus = document.querySelector("#comp_status");
 
-//  function startGame() {
-//     let startGame = document.querySelector("#start_game");
-//     let startBtn = document.querySelector(".start_btn");
 
-//     startBtn.addEventListener("click", function(){
+    let startBtn = document.querySelector(".custom-btn");
+
+    startBtn.addEventListener("click", function(){
+        document.querySelector("header").style.display = "none";
+
+        document.querySelector('main').style.display = "flex";
         
-//     })
-//  }
+    })
+ 
 
 
  groupElements.forEach(function(item){
@@ -46,12 +48,12 @@
     let compImage = compElements.querySelector("img");
     console.log(userImage.src, compImage.src);
     if(userImage.src == compImage.src){
-        alert("draw")
+        // alert("draw")
         userStatus.innerHTML = 'Draw';
         compStatus.innerHTML = 'Draw';
         
     }else if(userImage.src.endsWith("paper.png") && compImage.src.endsWith("rock.png")){
-        alert("user won");
+        // alert("user won");
         userCurrentScore++;
         userStatus.innerHTML = 'Won';
         compStatus.innerHTML = 'Lose';
@@ -61,7 +63,7 @@
 
            
     }else if(userImage.src.endsWith("paper.png") && compImage.src.endsWith("rock.png")){
-        alert("user won");
+        // alert("user won");
         userCurrentScore++;
         userStatus.innerHTML = 'Won';
         compStatus.innerHTML = 'Lose';
@@ -69,34 +71,34 @@
 
            
     }else if(userImage.src.endsWith( "rock.png") && compImage.src.endsWith("/img/paper.png")){
-        alert("comp won");
+        // alert("comp won");
         compCurrentScore++;
         userStatus.innerHTML = 'Lose';
         compStatus.innerHTML = 'Won';
         
 
     }else if (userImage.src.endsWith( "/img/scissors.png") && compImage.src.endsWith("/img/rock.png")){
-        alert("comp won");
+        // alert("comp won");
         compCurrentScore++;
         userStatus.innerHTML = 'Lose';
         compStatus.innerHTML = 'Won';
 
     
     }else if (userImage.src.endsWith("/img/rock.png") && compImage.src.endsWith("/img/scissors.png")){
-        alert("user won");
+        // alert("user won");
         userCurrentScore++;
         userStatus.innerHTML = 'Lose';
         compStatus.innerHTML = 'Won';
 
     
     }else if (userImage.src.endsWith("/img/paper.png") && compImage.src.endsWith("/img/scissors.png")){
-        alert("comp won");
+        // alert("comp won");
         compCurrentScore++;
         userStatus.innerHTML = 'Lose';
         compStatus.innerHTML = 'Won';
     
     }else if (userImage.src.endsWith("/img/scissors.png") && compImage.src.endsWith("/img/paper.png")){
-        alert("user won");
+        // alert("user won");
         userCurrentScore++;
         userStatus.innerHTML = 'Lose';
         compStatus.innerHTML = 'Won';
