@@ -87,8 +87,8 @@
     }else if (userImage.src.endsWith("/img/rock.png") && compImage.src.endsWith("/img/scissors.png")){
         // alert("user won");
         userCurrentScore++;
-        userStatus.innerHTML = 'Lose';
-        compStatus.innerHTML = 'Won';
+        userStatus.innerHTML = 'Won';
+        compStatus.innerHTML = 'Lose';
 
     
     }else if (userImage.src.endsWith("/img/paper.png") && compImage.src.endsWith("/img/scissors.png")){
