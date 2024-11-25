@@ -65,16 +65,16 @@
     }else if(userImage.src.endsWith("paper.png") && compImage.src.endsWith("rock.png")){
         // alert("user won");
         userCurrentScore++;
-        userStatus.innerHTML = 'Won';
-        compStatus.innerHTML = 'Lose';
+        userStatus.innerHTML = 'Lose';
+        compStatus.innerHTML = 'Won';
         
 
            
     }else if(userImage.src.endsWith( "rock.png") && compImage.src.endsWith("/img/paper.png")){
         // alert("comp won");
         compCurrentScore++;
-        userStatus.innerHTML = 'Lose';
-        compStatus.innerHTML = 'Won';
+        userStatus.innerHTML = 'Won';
+        compStatus.innerHTML = 'Lose';
         
 
     }else if (userImage.src.endsWith( "/img/scissors.png") && compImage.src.endsWith("/img/rock.png")){
