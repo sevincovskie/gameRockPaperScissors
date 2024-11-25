@@ -57,17 +57,7 @@
         userCurrentScore++;
         userStatus.innerHTML = 'Won';
         compStatus.innerHTML = 'Lose';
-        
-
-        
-
-           
-    }else if(userImage.src.endsWith("paper.png") && compImage.src.endsWith("rock.png")){
-        // alert("user won");
-        userCurrentScore++;
-        userStatus.innerHTML = 'Lose';
-        compStatus.innerHTML = 'Won';
-        
+ 
 
            
     }else if(userImage.src.endsWith( "rock.png") && compImage.src.endsWith("/img/paper.png")){
@@ -100,8 +90,8 @@
     }else if (userImage.src.endsWith("/img/scissors.png") && compImage.src.endsWith("/img/paper.png")){
         // alert("user won");
         userCurrentScore++;
-        userStatus.innerHTML = 'Lose';
-        compStatus.innerHTML = 'Won';
+        userStatus.innerHTML = 'Won';
+        compStatus.innerHTML = 'Lose';
 
     
     }
